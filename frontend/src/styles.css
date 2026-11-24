@@ -1,0 +1,141 @@
+/* Importação do Bootstrap e Ícones */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* 1. Fundo Degradê Dinâmico e Moderno */
+body {
+  background: radial-gradient(circle at 10% 10%, rgba(255, 94, 0, 0.2), transparent 40%),
+  radial-gradient(circle at 90% 90%, rgba(0, 150, 255, 0.25), transparent 50%),
+  linear-gradient(135deg, #020205 0%, #0a0b18 50%, #030a16 100%);
+  background-attachment: fixed;
+  color: #e0e6ed;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* 2. Barra de Navegação Superior */
+.navbar {
+  background: rgba(8, 10, 24, 0.85) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 100, 0, 0.15);
+}
+.badge.bg-info {
+  background: linear-gradient(90deg, #ff5e00, #0096ff) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* 3. Abas de Navegação (Tabs) */
+.nav-pills {
+  background: rgba(10, 15, 30, 0.65) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px;
+}
+.nav-pills .nav-link {
+  color: #a0aec0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-pills .nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #0062ff, #0096ff) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(0, 98, 255, 0.4);
+}
+
+/* 4. Cards Translúcidos (Glassmorphism) */
+.card {
+  background: rgba(12, 16, 35, 0.7) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 150, 255, 0.15) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #f1f5f9;
+}
+.card-header {
+  background: rgba(16, 24, 48, 0.9) !important;
+  border-bottom: 1px solid rgba(0, 150, 255, 0.15) !important;
+  font-weight: 600;
+}
+.card-header.bg-primary {
+  background: linear-gradient(90deg, rgba(255, 94, 0, 0.3), rgba(0, 98, 255, 0.3)) !important;
+}
+
+/* 5. Inputs e Formulários */
+.form-control, .form-select {
+  background: rgba(8, 10, 24, 0.8) !important;
+  border: 1px solid rgba(0, 150, 255, 0.25) !important;
+  color: #ffffff !important;
+}
+.form-control:focus, .form-select:focus {
+  border-color: #ff5e00 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 94, 0, 0.25) !important;
+}
+.form-label {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+/* 6. Botões Neon */
+.btn-primary {
+  background: linear-gradient(135deg, #ff5e00, #ff3300) !important;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(255, 94, 0, 0.3);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 15px rgba(255, 94, 0, 0.5);
+}
+.btn-outline-primary {
+  border-color: #0096ff !important;
+  color: #0096ff !important;
+}
+.btn-outline-primary:hover {
+  background: #0096ff !important;
+  color: #ffffff !important;
+}
+.btn-outline-danger {
+  border-color: #ff3300 !important;
+  color: #ff3300 !important;
+}
+.btn-outline-danger:hover {
+  background: #ff3300 !important;
+  color: #ffffff !important;
+}
+
+/* 7. Tabelas Escuras e Limpas */
+.table {
+  color: #e2e8f0 !important;
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+.table th {
+  background: rgba(8, 12, 28, 0.9) !important;
+  color: #94a3b8 !important;
+  border-bottom: 2px solid rgba(0, 150, 255, 0.15) !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 8. Outros Componentes */
+pre {
+  background-color: #e2e8f0 !important;
+  border: 1px solid rgba(0, 98, 255, 0.3) !important;
+  color: #040b1a !important;
+  font-weight: 700;
+}
+.badge.bg-secondary {
+  background: rgba(0, 150, 255, 0.1) !important;
+  color: #00d9ff !important;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+}
